@@ -1,54 +1,62 @@
-# Expense Tracker App — Starter Project
+duit.io 💸
+Aplikasi pengelolaan keuangan pribadi yang simpel, cepat, dan intuitif untuk melacak pemasukan serta pengeluaran harianmu.
 
-Selamat datang di *starter project* submission kelas **Front-End Web Pemula**! 🎉
+Fitur Utama
+📊 Dashboard Ringkas: Lihat total saldo, pemasukan, dan pengeluaran secara real-time.
 
-Proyek ini sudah dilengkapi dengan tampilan HTML dan CSS yang siap pakai. Tugas Anda adalah melengkapi logika JavaScript-nya di berkas `main.js` agar aplikasi berfungsi sepenuhnya.
+🏷️ Kategorisasi Transaksi: Kelompokkan pengeluaran (makanan, transportasi, hiburan, dll.) dengan mudah.
 
----
+📈 Laporan & Grafik: Visualisasi tren keuangan harian, mingguan, hingga bulanan.
 
-## Struktur Berkas
+💾 Penyimpanan Lokal: Data tersimpan aman di peranti pengguna tanpa pengumpulan data pribadi.
 
-```
-expense-tracker-starter-project/
-├── index.html   ← Struktur halaman (jangan diubah, kecuali bagian greeting)
-├── style.css    ← Tampilan visual (bebas dimodifikasi untuk portofolio)
-├── main.js      ← Tempat Anda menulis seluruh logika JavaScript
-└── README.md    ← Panduan ini
-```
+📱 Desain Responsif: Tampilan optimal untuk perangkat desktop maupun smartphone.
 
----
+Prakondisi & Instalasi
+Pastikan kamu sudah menginstal Node.js dan peramban web modern di perangkatmu.
 
-## Cara Menjalankan Proyek
+1. Klon Repository
+Bash
+git clone https://github.com/fellyonhart/Expanse-tracker-duit
+cd Expanse-tracker-duit
+2. Instal Dependensi
+Bash
+npm install
+3. Jalankan Server Pengembang
+Bash
+npm run dev
+Buka http://localhost:5173 (atau port yang tertera pada terminal) di peramban web kamu.
 
-Proyek ini adalah HTML statis, sehingga tidak memerlukan instalasi apapun.
+Struktur Proyek
+Plaintext
+duit.io/
+├── public/          # Aset statis (favicon, logo)
+├── src/
+│   ├── assets/      # Gambar dan berkas gaya global
+│   ├── components/  # Komponen UI (Card, Form, Navbar, dll.)
+│   ├── utils/       # Fungsi pembantu (format mata uang, tanggal)
+│   ├── App.jsx      # Komponen utama
+│   └── main.jsx     # Titik masuk aplikasi
+├── package.json
+└── README.md
+Teknologi yang Digunakan
+Frontend: React / HTML5 & CSS3
 
-**Opsi 1 (Disarankan):** Gunakan ekstensi **Live Server** di VS Code.
-1. Klik kanan pada `index.html`
-2. Pilih **"Open with Live Server"**
-3. Browser akan terbuka otomatis di `http://127.0.0.1:5500`
+Styling: Tailwind CSS
 
-**Opsi 2:** Buka langsung berkas `index.html` di browser (klik dua kali dari File Explorer).
+Build Tool: Vite
 
----
+Icon: Lucide React / FontAwesome
 
-## Mulai dari Mana?
+Kontribusi
+Kontribusi selalu terbuka! Jika kamu ingin mengembangkan fitur baru atau memperbaiki kutu (bug):
 
-1. **Buka `index.html`**, temukan komentar `TODO` di bagian atas dan ganti teks `Siswa Front-End` dengan nama lengkap serta username Dicoding Anda.
-2. **Buka `main.js`**, baca semua komentar `TODO` dari atas ke bawah. Setiap TODO menunjukkan satu bagian logika yang perlu Anda tulis.
-3. Mulai dari TODO berlabel `[Basic]`, kemudian lanjut ke `[Skilled]` dan `[Advanced]` sesuai target nilai Anda.
+Fork repositori ini.
 
----
+Buat branch fitur baru (git checkout -b fitur/FiturBaru).
 
-## Catatan Penting
+Lakukan commit perubahan (git commit -m 'Menambahkan FiturBaru').
 
-- **Atribut `data-testid`** pada elemen-elemen di `index.html` digunakan oleh sistem penilaian untuk memverifikasi struktur aplikasi Anda. Pastikan nilai atribut ini tidak berubah saat Anda membuat elemen kartu transaksi via JavaScript.
-- **Atribut `id`** seperti `incomeList`, `expenseList`, dan `transactionForm` juga digunakan oleh JavaScript. Pastikan nilainya tidak berubah.
-- Anda **bebas mengubah** warna, font, layout, dan styling di `style.css` untuk membuat tampilan yang unik dan personal.
+Push ke branch tersebut (git push origin fitur/FiturBaru).
 
----
-
-## Cara Mengumpulkan
-
-1. Pastikan semua fitur sudah berjalan dengan baik di browser.
-2. Kompres seluruh folder proyek menjadi satu berkas **ZIP**.
-3. Unggah berkas ZIP tersebut ke halaman submission di platform Dicoding.
+Buat Pull Request.
