@@ -1,62 +1,53 @@
-duit.io 💸
-Aplikasi pengelolaan keuangan pribadi yang simpel, cepat, dan intuitif untuk melacak pemasukan serta pengeluaran harianmu.
+# **duit.io** 💸
 
-Fitur Utama
-📊 Dashboard Ringkas: Lihat total saldo, pemasukan, dan pengeluaran secara real-time.
+> Aplikasi pencatat keuangan pribadi berbasis web yang cepat, interaktif, dan mudah digunakan untuk memantau pemasukan serta pengeluaran harian.
 
-🏷️ Kategorisasi Transaksi: Kelompokkan pengeluaran (makanan, transportasi, hiburan, dll.) dengan mudah.
+---
 
-📈 Laporan & Grafik: Visualisasi tren keuangan harian, mingguan, hingga bulanan.
+## **Fitur Utama**
 
-💾 Penyimpanan Lokal: Data tersimpan aman di peranti pengguna tanpa pengumpulan data pribadi.
+* 📊 **Ringkasan Keuangan:** Menampilkan total saldo, total pemasukan, dan total pengeluaran secara otomatis.
+* ➕ **Tambah Transaksi:** Catat transaksi baru dengan nama, jumlah uang, dan tipe transaksi (pemasukan/pengeluaran).
+* 🗑️ **Hapus & Kelola:** Hapus riwayat transaksi yang tidak diperlukan dengan satu klik.
+* 💾 **Penyimpanan Lokal (`localStorage`):** Data transaksi tersimpan aman di peramban web dan tidak hilang saat halaman diperbarui (*refresh*).
+* ⚡ **Ringan & Tanpa Dependensi Berat:** Dibangun menggunakan HTML, CSS, dan JavaScript murni (*Vanilla JS*).
 
-📱 Desain Responsif: Tampilan optimal untuk perangkat desktop maupun smartphone.
+---
 
-Prakondisi & Instalasi
-Pastikan kamu sudah menginstal Node.js dan peramban web modern di perangkatmu.
+## **Struktur Proyek**
 
-1. Klon Repository
-Bash
-git clone https://github.com/fellyonhart/Expanse-tracker-duit
-cd Expanse-tracker-duit
-2. Instal Dependensi
-Bash
-npm install
-3. Jalankan Server Pengembang
-Bash
-npm run dev
-Buka http://localhost:5173 (atau port yang tertera pada terminal) di peramban web kamu.
-
-Struktur Proyek
-Plaintext
+```text
 duit.io/
-├── public/          # Aset statis (favicon, logo)
-├── src/
-│   ├── assets/      # Gambar dan berkas gaya global
-│   ├── components/  # Komponen UI (Card, Form, Navbar, dll.)
-│   ├── utils/       # Fungsi pembantu (format mata uang, tanggal)
-│   ├── App.jsx      # Komponen utama
-│   └── main.jsx     # Titik masuk aplikasi
-├── package.json
-└── README.md
-Teknologi yang Digunakan
-Frontend: React / HTML5 & CSS3
+├── index.html       # Struktur UI utama aplikasi
+├── style.css        # Tata letak dan gaya kustom
+├── main.js          # Logika aplikasi dan manipulasi DOM
+└── README.md        # Dokumentasi proyek
+```
 
-Styling: Tailwind CSS
+---
 
-Build Tool: Vite
+## **Teknologi yang Digunakan**
 
-Icon: Lucide React / FontAwesome
+* **HTML5:** Struktur antarmuka pengguna
+* **CSS3:** Penataan gaya visual dan antarmuka responsif
+* **JavaScript (ES6+):** Logika transaksi, manipulasi DOM, dan penyimpanan data via `localStorage`
 
-Kontribusi
-Kontribusi selalu terbuka! Jika kamu ingin mengembangkan fitur baru atau memperbaiki kutu (bug):
+---
 
-Fork repositori ini.
+## **Panduan Penggunaan**
 
-Buat branch fitur baru (git checkout -b fitur/FiturBaru).
+1. Unduh atau *clone* repositori ini ke perangkat kamu:
+   ```bash
+   git clone https://github.com/fellyonhart/Expanse-tracker-duit
+   ```
+2. Buka direktori proyek:
+   ```bash
+   cd Expanse-tracker-duit
+   ```
+3. Buka berkas `index.html` langsung di peramban web (Chrome, Firefox, Edge, atau Safari) pilihanmu.
 
-Lakukan commit perubahan (git commit -m 'Menambahkan FiturBaru').
+---
 
-Push ke branch tersebut (git push origin fitur/FiturBaru).
+## **Lisensi**
 
-Buat Pull Request.
+Proyek ini dibuat untuk tujuan pembelajaran dan dapat digunakan serta dimodifikasi secara bebas di bawah lisensi MIT.
